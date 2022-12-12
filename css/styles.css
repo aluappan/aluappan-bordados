@@ -19,13 +19,22 @@ a {
     text-decoration: none;
 }
 
+.foto-perfil {
+    width: 15%;
+    border-radius: 100%;
+}
+
 .icon-link {
     background-color: white;
 }
 
-.foto-perfil {
-    width: 15%;
-    border-radius: 100%;
+.icon {
+    width: 50%;
+}
+
+.produto {
+    padding: 4.2%;
+    display: inline-block;
 }
 
 .foto-produto {
@@ -33,7 +42,15 @@ a {
     border-radius: 30%;
 }
 
-#produto {
-    padding: 4.6%;
-    display: inline-block;
+.produto:hover .preco {
+    opacity: 1;
+}
+
+.preco {
+    padding:20px;
+    color:white;
+    opacity:0;
+    transition: opacity .2s linear;
+    background-color:rgba(0,0,0,.7);
+    border-radius: 15px;
 }

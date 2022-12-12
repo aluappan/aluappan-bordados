@@ -1,9 +1,9 @@
 body {
     font-family:'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 nav, header {
-    text-align: center;
     padding: 0.8%;
 }
 
@@ -36,8 +36,4 @@ a {
 #produto {
     padding: 4.6%;
     display: inline-block;
-}
-
-footer {
-    text-align: center;
 }

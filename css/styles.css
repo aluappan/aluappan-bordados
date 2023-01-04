@@ -19,9 +19,19 @@ a {
     text-decoration: none;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .foto-perfil {
-    width: 15%;
+    width: 45%;
     border-radius: 100%;
+}
+
+.boas-vindas {
+    margin: 40px;
 }
 
 .icon-link {
@@ -42,15 +52,43 @@ a {
     border-radius: 30%;
 }
 
-.produto:hover .preco {
-    opacity: 1;
+footer {
+    text-align: left;
 }
 
-.preco {
-    padding:20px;
-    color:white;
-    opacity:0;
-    transition: opacity .2s linear;
-    background-color:rgba(0,0,0,.7);
-    border-radius: 15px;
+@media screen and (min-width:801px) {
+
+    .foto-perfil {
+        width: 25%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1025px) {
+
+    .foto-perfil {
+        width: 15%;
+    }
+
+    .preco {
+        padding:20px;
+        color:white;
+        opacity:0;
+        transition: opacity .2s linear;
+        background-color:rgba(0,0,0,.7);
+        border-radius: 15px;
+    }
+
+    .produto {
+        border: 1px solid rgba(209, 221, 194, 0.539);
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .produto:hover .preco {
+        opacity: 1;
+    }
 }
